@@ -87,8 +87,8 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
         loop={true}
         style={{ width: "100%", height: "max-content" }}
         autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
+          delay: 3000,
+          disableOnInteraction: false,
         }}
       >
         {movies.map((movie, index) => (
@@ -140,14 +140,17 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
                   width: { sm: "unset", md: "30%", lg: "40%" },
                 }}
               >
-                <Stack spacing={4} direction="column">
+                <Stack
+                  spacing={4}
+                  direction="column"
+                >
                   {/* title */}
                   <Typography
                     variant="h4"
                     fontWeight="700"
                     fontSize={{ xs: "2rem", md: "2rem", lg: "4rem" }}
                     sx={{
-                      ...uiConfigs.style.typoLines(2,"left")
+                      ...uiConfigs.style.typoLines(2, "left"),
                     }}
                   >
                     {movie.title || movie.name}
@@ -161,21 +164,27 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
 
                     <Divider orientation="vertical" />
                     {/* genres */}
-                    {[...movie.genre_ids].splice(0,2).map((genreId, index) =>(
-                        <Chip
-                            key={index}
-                            color="primary"
-                            variant="filled"
-                            label={genres.find(e => e.id === genreId) && genres.find(e => e.id === genreId).name}
-                        />
+                    {[...movie.genre_ids].splice(0, 2).map((genreId, index) => (
+                      <Chip
+                        key={index}
+                        color="primary"
+                        variant="filled"
+                        label={
+                          genres.find((e) => e.id === genreId) &&
+                          genres.find((e) => e.id === genreId).name
+                        }
+                      />
                     ))}
                     {/* genres */}
                   </Stack>
 
                   {/* overview */}
-                  <Typography variant="body1" sx={{
-                        ...uiConfigs.style.typoLines(3),
-                  }}>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      ...uiConfigs.style.typoLines(3),
+                    }}
+                  >
                     {movie.overview}
                   </Typography>
                   {/* overview */}
@@ -184,7 +193,7 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
                   <Button
                     variant="contained"
                     size="large"
-                    startIcon={<PlayArrowIcon/>}
+                    startIcon={<PlayArrowIcon />}
                     component={Link}
                     to={routesGen.mediaDetail(mediaType, movie.id)}
                     sx={{ width: "max-content" }}

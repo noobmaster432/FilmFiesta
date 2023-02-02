@@ -10,6 +10,7 @@ import GlobalLoading from "../common/GlobalLoading";
 import Topbar from "../common/Topbar";
 import favouriteApi from "../../api/modules/favourite.api";
 import { setListFavourites, setUser } from "../../redux/features/userSlice";
+import "./main.css";
 
 const MainLayout = () => {
   const dispatch = useDispatch();
