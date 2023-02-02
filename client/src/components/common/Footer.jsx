@@ -1,9 +1,9 @@
-import { Box, Button, Paper, Stack } from '@mui/material'
-import Container from './Container'
-import Logo from './Logo'
-import React from 'react'
-import menuConfigs from "../../configs/menu.configs"
-import { Link } from 'react-router-dom'
+import { Box, Button, Paper, Stack, Typography } from "@mui/material";
+import Container from "./Container";
+import Logo from "./Logo";
+import React from "react";
+import menuConfigs from "../../configs/menu.configs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,9 +29,30 @@ const Footer = () => {
             ))}
           </Box>
         </Stack>
+        <Typography
+          variant="h6"
+          sx={{
+            textAlign: "center",
+            paddingTop: "1rem",
+            color: "rgb(255,255,255)",
+            fontSize: "1.125rem",
+            fontWeight: "600",
+          }}
+        >
+          Made with ❤️ by
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/noobmaster432"
+            style={{ textDecoration: "none", color: "#ff0000" }}
+          >
+            {" "}
+            Noobmaster
+          </a>
+        </Typography>
       </Paper>
     </Container>
   );
-}
+};
 
 export default Footer;
