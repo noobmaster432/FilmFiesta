@@ -108,7 +108,7 @@ const ReviewList = () => {
   const [page, setPage] = useState(0);
   const [count, setCount] = useState(0);
 
-  const skip = 2;
+  const skip = 4;
 
   const dispatch = useDispatch();
 
