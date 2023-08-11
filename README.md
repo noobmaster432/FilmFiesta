@@ -19,6 +19,8 @@ FilmFiesta is a dynamic movie review web application that empowers users to expl
 ---
 Explore, review, and engage with the world of movies and TV series through FilmFiesta. Create your account, share your thoughts, and dive into an immersive cinematic experience.
 
+---
+
 ## Screenshots
 
 <img width="949" alt="Screenshot 2023-04-14 013514" src="https://user-images.githubusercontent.com/103204431/231871074-1246f131-c688-4f1b-b53f-d6dd92546a2b.png">
