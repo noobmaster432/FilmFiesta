@@ -12,9 +12,11 @@ FilmFiesta is a dynamic movie review web application that empowers users to expl
 - **Light and Dark Theme** : Users can toggle between a light and dark theme based on their visual preferences, enhancing the overall user experience.
 
 ## Tech Stack
-- Frontend: React, Redux, Material UI, Swiper Js, Formik-Yup, Axios
-- Backend: Node, Express, Mongoose, Axios, JWT
+- Frontend: Reactjs, Material UI, Redux(State Management) ,Swiper Js, Formik-Yup
+- Backend: Node, Express, JWT
 - API: TMDB
+- Database: Mongoose(ODM), MongoDB
+- API Communication: Axios
 
 ---
 Explore, review, and engage with the world of movies and TV series through FilmFiesta. Create your account, share your thoughts, and dive into an immersive cinematic experience.
